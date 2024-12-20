@@ -4,6 +4,10 @@
     background: url('/header_img.png') no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .header-contents {
@@ -16,22 +20,18 @@
     bottom: 10%;
     left: 6vw;
     animation: fadeIn 3s;
-    padding-top: 90px;
-    margin-left: 250px;
-    margin-right: 70px;
+    padding-top: 50px;
+    margin-left: 230px;
+    margin-right: 130px;
 }
 
 .header-contents h2{
     font-weight: 500;
     color: white;
-    font-size: max(4.5vw,22px);
-    
-}
+    font-size: max(3.0vw,15px);
+    padding: 30px 10px;
 
-.header-contents p{
-    color: rgb(95, 91, 91);
-    font-size: 1vw;
-    font-size: 12px;
+    
 }
 
 @media(max-width: 1050px){
@@ -43,9 +43,12 @@
 @media(max-width: 750px){
     .header-contents{
         max-width: 65%;
+          align-items: center; 
+          text-align: center;
     }
-    .header-contents p{
-        display: none;
+    .header-contents h2{
+      
+        white-space: pre-line;
     }
     .header-contents button{
         padding: 2vw 4vw;
