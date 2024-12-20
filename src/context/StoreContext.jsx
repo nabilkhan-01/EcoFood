@@ -38,13 +38,19 @@ const StoreContextProvider = ({ children }) => {
         return totalAmount;
     };
 
+    // New: Clear the cart
+    const clearCart = () => {
+        setCartItems({});
+    };
+
     const contextValue = {
         food_list,
         cartItems,
         setCartItems,
         addToCart,
         removeFromCart,
-        getTotalCartAmount
+        getTotalCartAmount,
+        clearCart // Added to the context
     };
 
     return <StoreContext.Provider value={contextValue}>{children}</StoreContext.Provider>;

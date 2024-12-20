@@ -16,8 +16,9 @@
     bottom: 10%;
     left: 6vw;
     animation: fadeIn 3s;
-    padding-top: 150px;
-    margin-left: 400px;
+    padding-top: 90px;
+    margin-left: 250px;
+    margin-right: 70px;
 }
 
 .header-contents h2{
@@ -30,7 +31,7 @@
 .header-contents p{
     color: rgb(95, 91, 91);
     font-size: 1vw;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 @media(max-width: 1050px){
