@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/nabilkhan-01/EcoFood",
+  "homepage": "https://nabilkhan-01.github.io/EcoFood",
 
   "scripts": {
     "dev": "vite",
