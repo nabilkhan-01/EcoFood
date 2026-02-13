@@ -1,11 +1,16 @@
 .food-item{
     width: 100%;
     margin: auto;
-    background-color: rgb(36, 30, 30);
+    background-color: var(--surface);
     border-radius: 15px;
-    box-shadow: 0px 0px 10px #00000015;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
     transition: 0.3s;
     animation: fadeIn 1s;
+}
+
+.food-item:hover{
+    transform: translateY(-2px);
 }
 .food-item-image{
     width: 100%;
@@ -22,7 +27,7 @@
 }
 .food-item-name-rating p{
     font-size: 20px;
-    color: #ffffff;
+    color: var(--text);
     font-weight: 500;
 }
 .food-item-name-rating img{
@@ -56,29 +61,32 @@
 }
 
 .food-item-rating span{
-    color: #bcbcbc;
+    color: var(--muted);
     font-size: 14px;
 }
 .food-item-desc{
-    color: #bcbcbc;
-    font-size: 12px;
+    color: var(--muted);
+    font-size: 13px;
 }
 .food-item-price{
-    color: rgb(189, 215, 150);
+    color: var(--accent);
     font-size: 22px;
-    font-weight: 200;
+    font-weight: 600;
     margin: 10px 0px;
 }
 .food-item-img-container{
     position: relative;
 }
 .food-item-img-container .add{
-    width: 35px;
+    width: 38px;
     position: absolute;
     bottom: 15px;
     right: 15px;
     cursor: pointer;
     border-radius: 50%;
+    background-color: var(--accent);
+    padding: 8px;
+    box-shadow: 0px 0px 10px #00000015;
 }
 .food-item-counter{
     position: absolute;
@@ -89,8 +97,14 @@
     gap: 20px;
     padding: 6px;
     border-radius: 50px;
-    background-color: rgba(60, 42, 42, 0.819);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: 0px 0px 10px #00000015;
 }
 .food-item-counter img{
     width: 30px;
+}
+
+.food-item-counter p{
+    color: var(--text);
 }

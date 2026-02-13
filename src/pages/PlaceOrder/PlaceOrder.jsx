@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 const PlaceOrder = () => {
   const navigate = useNavigate();
-  const { cartItems, food_list, getTotalCartAmount, clearCart } = useContext(StoreContext);
+  const { cartItems, food_list, getTotalCartAmount, clearCart, pushToast } = useContext(StoreContext);
 
   const isCartEmpty = Object.keys(cartItems).length === 0;
   const itemsCount = useMemo(
@@ -33,7 +33,7 @@ const PlaceOrder = () => {
       return;
     }
     clearCart();
-    alert('Order Placed Successfully');
+    pushToast('Order placed successfully', 'success');
     navigate('/');
   };
 

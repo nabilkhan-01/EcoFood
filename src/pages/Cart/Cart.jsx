@@ -1,21 +1,24 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import './Cart.css';
 import { StoreContext } from '../../context/StoreContext';
 import { useNavigate } from 'react-router-dom';
+import CheckoutModal from '../../components/CheckoutModal/CheckoutModal';
 
 const Cart = () => {
   const { cartItems, food_list, addToCart, removeFromCart, deleteFromCart, getTotalCartAmount } = useContext(StoreContext);
   const navigate = useNavigate();
+  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
 
   // Check if cart is empty
   const isCartEmpty = Object.keys(cartItems).length === 0;
 
   const handleCheckout = () => {
-    navigate('/order');
+    setIsCheckoutOpen(true);
   };
 
   return (
     <div className='cart'>
+      <CheckoutModal isOpen={isCheckoutOpen} onClose={() => setIsCheckoutOpen(false)} />
       {isCartEmpty ? (
         <div className='empty-cart'>
           <h2>Your Cart is Empty</h2>

@@ -15,9 +15,9 @@
 
 .place-order-form,
 .place-order-summary{
-	background-color: #fff;
+	background-color: var(--surface);
 	border-radius: 12px;
-	box-shadow: 0px 0px 10px #00000015;
+	box-shadow: var(--shadow);
 	padding: 20px;
 }
 
@@ -30,19 +30,20 @@
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
-	color: #555;
+	color: var(--muted-2);
 	margin-bottom: 14px;
 }
 
 .place-order-form input{
 	padding: 10px 12px;
 	border-radius: 8px;
-	border: 1px solid #e2e2e2;
+	border: 1px solid var(--border);
 	outline: none;
+	background-color: var(--surface);
 }
 
 .place-order-form input:focus{
-	border-color: tomato;
+	border-color: var(--accent);
 }
 
 .place-order-row{
@@ -53,22 +54,23 @@
 
 .place-order-primary{
 	border: none;
-	background-color: tomato;
+	background-color: var(--accent);
 	color: white;
 	padding: 12px 14px;
 	border-radius: 8px;
 	cursor: pointer;
+	transition: 0.2s;
 }
 
 .place-order-primary:hover{
-	background-color: #fff4f2;
-	color: #555;
+	background-color: var(--soft);
+	color: var(--muted-2);
 }
 
 .place-order-summary-row{
 	display: flex;
 	justify-content: space-between;
-	color: #555;
+	color: var(--muted-2);
 	margin: 10px 0;
 }
 
@@ -78,7 +80,7 @@
 
 .place-order-summary hr{
 	height: 1px;
-	background-color: #e2e2e2;
+	background-color: var(--border);
 	border: none;
 	margin: 15px 0;
 }
@@ -92,15 +94,15 @@
 .place-order-item{
 	display: flex;
 	justify-content: space-between;
-	color: #555;
+	color: var(--muted-2);
 }
 
 .place-order-empty{
-	background-color: #fff;
+	background-color: var(--surface);
 	border-radius: 12px;
-	box-shadow: 0px 0px 10px #00000015;
+	box-shadow: var(--shadow);
 	padding: 25px;
-	color: #555;
+	color: var(--muted-2);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

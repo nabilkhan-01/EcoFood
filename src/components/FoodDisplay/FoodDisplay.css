@@ -15,5 +15,5 @@
 
 .food-display-state{
     margin-top: 20px;
-    color: #808080;
+    color: var(--muted);
 }
