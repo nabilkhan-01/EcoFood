@@ -60,8 +60,3 @@ This repo is configured for GitHub Pages with Vite base path `/EcoFood/`.
 ```bash
 npm run deploy
 ```
-
-## Resume-ready bullets (example)
-
-- Built a responsive React (Vite) food-ordering SPA with category filtering and cart state management using Context.
-- Implemented a checkout UI with order summary + form validation, dynamic star ratings, accessibility enhancements, and AVIF/WebP hero image optimization.
